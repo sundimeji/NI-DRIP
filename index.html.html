@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NI DRIP CENTRAL | Premium Electronics & Appliances</title>
+  <meta name="description" content="Best deals on electronics & appliances in Belfast & UK. Fast delivery, warranty included. Deep sky blue experience.">
+  <!-- Google Fonts + Tailwind + Font Awesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      /* DEEP SKY BLUE BACKGROUND - vibrant yet soft on eyes */
+      background: linear-gradient(135deg, #00B4DB 0%, #0083B0 100%);
+      color: #0a0c12;
+      scroll-behavior: smooth;
+    }
+    /* Ensure high legibility: dark text on bright bg, proper contrast */
+    .text-dark-rich {
+      color: #0a1927;
+    }
+    .card-bright {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(2px);
+      border: 1px solid rgba(255,255,255,0.6);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    }
+    .btn-primary {
+      background: linear-gradient(95deg, #1e2a5e, #0f2b3d);
+      color: white;
+      font-weight: 700;
+      transition: all 0.25s ease;
+      box-shadow: 0 5px 14px rgba(0,0,0,0.2);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(95deg, #2a3a6e, #1a3f55);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+    }
+    /* infinite ticker */
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: scrollTicker 32s linear infinite;
+    }
+    @keyframes scrollTicker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    /* brand slider animations */
+    .brand-slider-track {
+      display: flex;
+      width: max-content;
+      animation: brandScroll 26s linear infinite;
+    }
+    .reverse-slider .brand-slider-track {
+      animation-direction: reverse;
+    }
+    @keyframes brandScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    /* product slider arrows */
+    .slider-btn {
+      background: white;
+      color: #0083b0;
+      border-radius: 60px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      transition: 0.2s;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .slider-btn:hover {
+      background: #0f2b3d;
+      color: white;
+      transform: scale(1.05);
+    }
+    /* review dots */
+    .review-dot {
+      background: #cbd5e1;
+      transition: all 0.2s;
+    }
+    .review-dot.active {
+      background: #0f2b3d;
+      width: 28px;
+      border-radius: 20px;
+    }
+    /* custom card hover */
+    .product-card {
+      background: rgba(255, 255, 255, 0.97);
+      border-radius: 28px;
+      transition: all 0.25s ease;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 35px -12px rgba(0,0,0,0.25);
+      background: white;
+    }
+    /* glossy footer */
+    .footer-glass {
+      background: rgba(10, 30, 45, 0.85);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(255,255,255,0.25);
+    }
+    .review-card {
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 24px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+      transition: 0.2s;
+    }
+    .text-legible {
+      color: #1e2a3a;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    h1, h2, h3, .font-bold {
+      color: #0a1c28;
+    }
+    .bg-deep-sky {
+      background: linear-gradient(120deg, #00c6fb 0%, #0093c4 100%);
+    }
+  </style>
+</head>
+<body class="bg-deep-sky">
+
+  <!-- ========== HEADER (clean, legible, modern) ========== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-md border-b border-white/40">
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between flex-wrap gap-3">
+      <a href="#" class="flex items-center space-x-2">
+        <img class="h-10 w-auto md:h-12" src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/08/887693ED-AB70-4CCC-9BA4-EC73CEA3F8C6-1-1024x343.png" alt="NI DRIP CENTRAL" style="max-height: 48px;">
+      </a>
+      <nav class="hidden md:flex items-center gap-7 font-semibold text-gray-800">
+        <a href="#" class="hover:text-sky-700 transition">Home</a>
+        <a href="#" class="hover:text-sky-700 transition">Shop</a>
+        <a href="#" class="hover:text-sky-700 transition">Contact</a>
+        <a href="#" class="hover:text-sky-700 transition">FAQs</a>
+      </nav>
+      <div class="flex items-center gap-5">
+        <div class="relative cursor-pointer group">
+          <i class="fa-solid fa-bag-shopping text-gray-800 text-xl"></i>
+          <span class="absolute -top-2 -right-3 bg-sky-800 text-white text-xs rounded-full px-1.5 py-0.5">0</span>
+        </div>
+        <i class="fa-regular fa-user text-gray-800 text-xl cursor-pointer hover:text-sky-700"></i>
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars text-gray-800 text-2xl"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NEWS TICKER (legible, high contrast) ========== -->
+  <div class="bg-sky-900/30 border-y border-white/30 overflow-hidden py-3 backdrop-blur-sm">
+    <div class="ticker-track flex whitespace-nowrap text-sm md:text-base font-bold text-white tracking-wide">
+      <span class="inline-flex items-center mx-4">🔥 BEST DEALS ON ELECTRONICS & APPLIANCES <span class="mx-3 text-yellow-200">|</span> LIMITED TIME OFFERS <span class="mx-3 text-yellow-200">|</span> FAST DELIVERY NI & UK <span class="mx-3 text-yellow-200">|</span> WARRANTY INCLUDED <span class="mx-3 text-yellow-200">|</span> UPGRADE YOUR HOME TODAY</span>
+      <span class="inline-flex items-center mx-4">🔥 BEST DEALS ON ELECTRONICS & APPLIANCES <span class="mx-3 text-yellow-200">|</span> LIMITED TIME OFFERS <span class="mx-3 text-yellow-200">|</span> FAST DELIVERY NI & UK <span class="mx-3 text-yellow-200">|</span> WARRANTY INCLUDED <span class="mx-3 text-yellow-200">|</span> UPGRADE YOUR HOME TODAY</span>
+    </div>
+  </div>
+
+  <!-- ========== BRAND MARQUEE SECTION (white cards for clarity) ========== -->
+  <div class="py-12 bg-white/20 backdrop-blur-sm">
+    <div class="overflow-hidden mb-5">
+      <div class="brand-slider-track flex items-center gap-12">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/HiSense.png" class="h-12 md:h-16 w-auto object-contain drop-shadow-md" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/HotPoint.png" class="h-12 md:h-16 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Kenwood.png" class="h-12 md:h-16 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Panasonic.png" class="h-12 md:h-16 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Samsung.jpg" class="h-12 md:h-16 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Sony.png" class="h-12 md:h-16 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/HiSense.png" class="h-12 md:h-16 w-auto object-contain" alt="brand">
+      </div>
+    </div>
+    <div class="overflow-hidden reverse-slider">
+      <div class="brand-slider-track flex items-center gap-12">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Xbox.jpg" class="h-10 md:h-14 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Beko.png" class="h-10 md:h-14 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/TCL.jpg" class="h-10 md:h-14 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Whirlpool.png" class="h-10 md:h-14 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Xbox.jpg" class="h-10 md:h-14 w-auto object-contain" alt="brand">
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2026/03/Beko.png" class="h-10 md:h-14 w-auto object-contain" alt="brand">
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HERO SECTION (sky blue gradient, readable text) ========== -->
+  <div class="relative w-full py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDYiIGQ9Ik0wIDBoNDB2NDBIMHoiLz48cGF0aCBkPSJNMjAgMjBhMTAgMTAgMCAwIDEgMjAgMCAxMCAxMCAwIDAgMS0yMCAweiIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIwLjA1Ii8+PC9zdmc+')] opacity-20"></div>
+    <div class="max-w-5xl mx-auto text-center px-5 relative z-2">
+      <h1 class="text-5xl md:text-7xl font-black tracking-tight text-white drop-shadow-lg">Upgrade Your <span class="bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">Home Tech</span></h1>
+      <p class="text-xl md:text-2xl text-white/90 mt-4 max-w-2xl mx-auto font-medium">Premium electronics & appliances • Price match • Next-day delivery across NI & UK</p>
+      <div class="mt-8 flex gap-5 justify-center flex-wrap">
+        <a href="#" class="btn-primary px-8 py-4 rounded-full text-white font-bold text-base shadow-xl">Shop Now →</a>
+        <a href="#" class="bg-white/20 backdrop-blur-sm border border-white/40 px-8 py-4 rounded-full text-white font-semibold hover:bg-white/30 transition">Explore Offers</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FEATURE TEXT (legible card) ========== -->
+  <div class="max-w-5xl mx-auto px-5 py-14">
+    <div class="bg-white/85 rounded-3xl p-8 md:p-10 shadow-2xl border border-white/60">
+      <p class="text-gray-800 text-lg md:text-xl leading-relaxed font-medium text-center">At <span class="font-extrabold text-sky-800">NI DRIP CENTRAL ELECTRONICS & APPLIANCES</span>, we’ve built our reputation on reliable service, unbeatable prices, and fast local delivery. Whether you need a fridge, freezer, or essential appliances, we make the process simple and stress‑free — trusted across Belfast and beyond.</p>
+    </div>
+  </div>
+
+  <!-- ========== PRODUCT CAROUSEL (bright cards, dark text, high legibility) ========== -->
+  <div class="max-w-7xl mx-auto px-4 md:px-8 py-12">
+    <div class="flex justify-between items-center mb-8 flex-wrap gap-3">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white drop-shadow">🔥 Hot Deals This Week</h2>
+      <div class="flex gap-3">
+        <button id="prev-product" class="slider-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-product" class="slider-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="overflow-hidden">
+      <div id="product-track" class="flex gap-6 transition-transform duration-500 ease-out will-change-transform"></div>
+    </div>
+  </div>
+
+  <!-- ========== REVIEWS WALL (high contrast, legible) ========== -->
+  <div class="py-20 bg-white/40 backdrop-blur-sm mt-10">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <span class="bg-sky-800 text-white px-4 py-1 rounded-full text-sm font-semibold">★★★★★ 5-star rated</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">What our customers say</h2>
+      </div>
+      <div class="relative overflow-hidden">
+        <div id="reviews-track" class="flex transition-transform duration-700 ease-out"></div>
+        <div class="flex justify-center gap-3 mt-12" id="review-dots-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CALL TO ACTION (sky blue consistency) ========== -->
+  <div class="bg-sky-800 text-white py-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+    <div class="max-w-3xl mx-auto px-5 relative">
+      <h2 class="text-3xl md:text-5xl font-bold">Ready to Order? Need an <span class="text-yellow-300">appliance today?</span></h2>
+      <p class="text-sky-100 text-lg mt-4">Call us or shop online — we’ll arrange fast delivery at your convenience.</p>
+      <div class="mt-10">
+        <a href="#" class="bg-white text-sky-800 px-10 py-4 rounded-full font-extrabold text-lg inline-flex items-center gap-2 shadow-xl hover:bg-gray-100 transition">Shop Online <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER (modern glass, legible) ========== -->
+  <footer class="footer-glass text-white pt-14 pb-8">
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div>
+        <img src="https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/08/3b74a6cc-95db-462c-8c5b-55122bb9e389-1024x343.png" class="h-10 mb-4 brightness-0 invert" alt="logo">
+        <p class="text-sm text-white/80">UK Registered company — fast reliable electronics & appliances. Est. 2019, Belfast hub.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-white/80">
+          <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="#" class="hover:text-yellow-300">Shop</a></li>
+          <li><a href="#" class="hover:text-yellow-300">About Us</a></li>
+          <li><a href="#" class="hover:text-yellow-300">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-yellow-300">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Contact</h4>
+        <p class="text-sm flex gap-2"><i class="fas fa-map-marker-alt mt-1"></i> Office 1405, 92 Castle Street, Belfast BT1 1HE</p>
+        <p class="text-sm mt-2"><i class="fas fa-envelope mr-2"></i> hello@nidripcentral.co.uk</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Follow</h4>
+        <div class="flex space-x-5 text-xl">
+          <a href="#" class="hover:text-yellow-300"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-xs text-white/60 border-t border-white/20 mt-12 pt-6">
+      &copy; 2025 NI DRIP CENTRAL ELECTRONICS & APPLIANCES — All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    // PRODUCT DATA (legible pricing)
+    const products = [
+      { name: "Beko Fridge Freezer", price: "103.90", img: "https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/11/97cc0895-6ecb-43cd-8b09-7529652abb65-300x300.png" },
+      { name: "Beko Undercounter", price: "103.90", img: "https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/11/97cc0895-6ecb-43cd-8b09-7529652abb65-300x300.png" },
+      { name: "BEKO Pro HarvestFresh", price: "207.23", img: "https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/09/s-l1600_5-1-300x300.jpg" },
+      { name: "Beko Slimline Dishwasher", price: "62.57", img: "https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/09/s-l1600_6-1-300x300.jpg" },
+      { name: "Kenwood Dishwasher", price: "103.90", img: "https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/09/s-l1600_4-1-300x300.jpg" },
+      { name: "Hotpoint Fridge/Freezer", price: "176.23", img: "https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/09/s-l1600_2-1-300x300.jpg" },
+      { name: "Hoover Built-in Oven", price: "198.97", img: "https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/09/s-l1600_6-300x300.jpg" },
+      { name: "Grundig American Fridge", price: "207.23", img: "https://nidripcentralelectronics.co.uk/wp-content/uploads/2025/09/s-l1600_8-300x300.jpg" }
+    ];
+    const track = document.getElementById('product-track');
+    function renderProducts() {
+      track.innerHTML = '';
+      products.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'min-w-[240px] md:min-w-[260px] product-card p-5 flex flex-col';
+        card.innerHTML = `
+          <img src="${p.img}" class="h-44 w-full object-contain mb-4 rounded-xl" alt="${p.name}">
+          <h3 class="font-bold text-gray-800 text-lg">${p.name}</h3>
+          <div class="flex justify-between items-center mt-4">
+            <span class="text-2xl font-black text-sky-800">£${p.price}</span>
+            <button class="bg-sky-800 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-sky-900 transition shadow-md">Add +</button>
+          </div>
+        `;
+        track.appendChild(card);
+      });
+    }
+    renderProducts();
+    let position = 0;
+    const cardFullWidth = 276; // width+gap
+    function updateSlide() {
+      track.style.transform = `translateX(-${position * cardFullWidth}px)`;
+    }
+    document.getElementById('next-product').addEventListener('click', () => {
+      if (position < products.length - 3) position++;
+      else position = 0;
+      updateSlide();
+    });
+    document.getElementById('prev-product').addEventListener('click', () => {
+      if (position > 0) position--;
+      else position = products.length - 3;
+      updateSlide();
+    });
+    
+    // REVIEWS (rich, legible)
+    const reviews = [
+      { text: "Dishwasher was immaculate. Excellent communication. Delivery smooth.", name: "Gareth Taggart" },
+      { text: "Great price, great communication and delivered. Would recommend.", name: "Chloe C" },
+      { text: "Great job, timekeeping and communication very much appreciated.", name: "Declan Corr" },
+      { text: "My TV and washing machine are awesome. Speedy delivery.", name: "Mr Josh" },
+      { text: "Excellent service, friendly and a great price too.", name: "Fiona McDonnell" },
+      { text: "Very nice lad to deal with. Arrived on time and extremely pleasant.", name: "Bridget Wall" },
+      { text: "Fantastic communication. Everything arrived as described.", name: "Michael R" },
+      { text: "Brilliant service and excellent prices. Highly recommended.", name: "Daniel K" }
+    ];
+    const reviewsTrack = document.getElementById('reviews-track');
+    let reviewIndex = 0;
+    function renderReviewsPage(pageIdx) {
+      reviewsTrack.innerHTML = '';
+      const perPage = 4;
+      const start = pageIdx * perPage;
+      const end = start + perPage;
+      const pageReviews = reviews.slice(start, end);
+      const grid = document.createElement('div');
+      grid.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full';
+      pageReviews.forEach(r => {
+        const card = document.createElement('div');
+        card.className = 'review-card p-6 text-center shadow-xl transition-transform';
+        card.innerHTML = `<div class="text-yellow-500 text-2xl mb-3">★★★★★</div><p class="text-gray-700 font-medium">“${r.text}”</p><p class="font-extrabold text-sky-800 mt-4">- ${r.name}</p>`;
+        grid.appendChild(card);
+      });
+      reviewsTrack.appendChild(grid);
+      updateDots();
+    }
+    function updateDots() {
+      const totalPages = Math.ceil(reviews.length / 4);
+      const container = document.getElementById('review-dots-container');
+      container.innerHTML = '';
+      for (let i = 0; i < totalPages; i++) {
+        const dot = document.createElement('span');
+        dot.className = `review-dot w-2.5 h-2.5 rounded-full mx-1 cursor-pointer transition-all ${i === reviewIndex ? 'active' : 'bg-gray-400'}`;
+        dot.addEventListener('click', () => { reviewIndex = i; renderReviewsPage(reviewIndex); });
+        container.appendChild(dot);
+      }
+    }
+    renderReviewsPage(0);
+    setInterval(() => {
+      const total = Math.ceil(reviews.length / 4);
+      reviewIndex = (reviewIndex + 1) % total;
+      renderReviewsPage(reviewIndex);
+    }, 5500);
+  </script>
+</body>
+</html>
